@@ -1,0 +1,42 @@
+@media (hover:hover){}
+details summary::-webkit-details-marker {
+    display: none
+  }
+  details > summary {
+    list-style: none;
+  }
+  details summary:before {
+    content: "+";
+  }
+  details[open] summary:before {
+    content: "-";
+  }
+.head {
+    margin-left: 10%;
+}
+.memes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+}
+.summary-text-and-meme {
+    display: flex;
+    justify-content: space-between;
+    border-top-width: 1px;
+    border-color: black;
+}
+.text-and-meme {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+summary {
+    color: blue;
+    font-weight: bold;
+}
+.summary-text-and-meme:hover, .summary-text-and-meme:focus, .summary-text-and-meme:active{
+    color:black;
+    cursor: pointer;
+    transition: 1s;
+}
