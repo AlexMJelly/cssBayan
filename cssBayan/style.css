@@ -1,0 +1,133 @@
+@media (hover: hover) {
+    .text-and-meme:hover > .accordion-meme {
+      height: 24rem;
+      width: 24rem;
+    }
+  }
+  @media (max-width: 320px) and (min-width: 1px) {
+    html {
+      font-size: 40%;
+    }
+  }
+  @media (max-width: 820px) and (min-width: 321px) {
+    html {
+      font-size: 85%;
+    }
+  }
+  
+  @media (max-width: 1920px) and (min-width: 821px) {
+    html {
+      font-size: 100%;
+    }
+  }
+  @media (min-width: 1921px) {
+    html {
+      font-size: 140%;
+    }
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    font-family: 'Lora', serif;
+  }
+  body {
+    font-size: 2.5rem;
+    max-width: 80%;
+    margin: auto;
+  }  
+  input {
+    display: none;
+    visibility: hidden;
+  }  
+  label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }  
+  .cssBayan {
+    font-size: 3rem;
+    margin: 2rem 0;
+    align-self: flex-start;
+    padding-left: 1.5%
+  }  
+  .memes {
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+  }
+  .text-and-meme {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-top: 0.15rem solid rgba(169, 169, 169, 0.4);
+  }
+  .meme-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
+  .meme-icon {
+    width: 1.5rem;
+    visibility: hidden;
+    transition: transform 0.6s;
+  }
+  .meme-image {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 0.6s;
+  }
+  .accordion-meme {
+    height: 0;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    transition: all 0.6s;
+  }
+  .meme-label:hover {
+    cursor: pointer;
+  }  
+  .memes:hover {
+    color: black;
+  }
+  .memes:hover .meme-header .meme-icon {
+    visibility: visible;
+  }  
+  input:checked + .meme-label {
+    color: black;
+  }  
+  input:checked + label .accordion-meme .meme-image {
+    height: 24rem;
+    width: 24rem;
+    opacity: 1;
+  } 
+  input:checked + label .accordion-meme {
+    height: 25rem;
+    width: 25rem;
+  }
+  input:checked + label .meme-header .meme-icon {
+    transform: rotate(-45deg);
+  }  
+  .meme-label:hover .accordion-meme .meme-image {
+    height: 24rem;
+    width: 24rem;
+    opacity: 1;
+  } 
+  .meme-label:hover .accordion-meme {
+    height: 25rem;
+    width: 25rem;
+  } 
+  .meme-label:hover .meme-header .meme-icon {
+    transform: rotate(-45deg);
+  } 
