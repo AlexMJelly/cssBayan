@@ -4,7 +4,7 @@
       width: 24rem;
     }
   }
-  @media (max-width: 320px) and (min-width: 0px) {
+  @media (max-width: 320px) and (min-width: 1px) {
     html {
       font-size: 40%;
     }
